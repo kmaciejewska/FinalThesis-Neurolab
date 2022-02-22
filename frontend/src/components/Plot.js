@@ -15,7 +15,6 @@ export default function Plot({ figJson }) {
   }
 
   function plot(json) {
-    console.log(json);
     mpld3_load_lib("https://mpld3.github.io/js/d3.v3.min.js", function () {
       mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.3.js", function () {
         mpld3.draw_figure("fig", json);

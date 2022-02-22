@@ -36,10 +36,6 @@ _mailinglist
 docs/_build/
 .vscode
 
-#media
-filtered.png
-raw.png
-
 # Coverage reports
 htmlcov/
 .coverage

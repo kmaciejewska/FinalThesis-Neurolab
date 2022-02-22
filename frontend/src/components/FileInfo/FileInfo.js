@@ -8,7 +8,7 @@ import Plot from "../Plot";
 
 function FileInfo(props) {
   let { file, fileInfo, plot } = props;
-  console.log(file);
+
   return (
     <Grid
       container

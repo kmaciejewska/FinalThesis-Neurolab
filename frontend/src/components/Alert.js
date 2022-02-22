@@ -6,7 +6,6 @@ import { Typography } from "@mui/material";
 
 const GlobalAlert = (props) => {
   const { msg, resetAlert } = props;
-  console.log(props);
 
   setTimeout(() => resetAlert(), 3000);
 

@@ -13,7 +13,7 @@ import Card from "../Card/Card";
 
 function Filter(props) {
   let { filterSettings, defaultSettings, preprocess, filteredPlot } = props;
-  console.log(filteredPlot);
+
   const [filterState, setFilterState] = React.useState({
     low: defaultSettings.l_freq,
     high: defaultSettings.h_freq,

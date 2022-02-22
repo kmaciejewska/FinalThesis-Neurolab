@@ -37,7 +37,6 @@ export const uploadFile = (file) => (dispatch) => {
       },
     })
     .then((res) => {
-      console.log(res.data);
       dispatch({
         type: ADD_FILE,
         payload: {
@@ -66,7 +65,6 @@ export const getFilterSettings = () => (dispatch) => {
   axios
     .get("/filter-settings")
     .then((res) => {
-      console.log(res.data);
       dispatch({
         type: GET_FILTER_SETTINGS,
         payload: {
@@ -82,7 +80,6 @@ export const getFilterSettings = () => (dispatch) => {
 
 // preprocess with given filter settings
 export const preprocess = (filterState) => (dispatch) => {
-  console.log(filterState);
   axios
     .post("/preprocess", filterState, {
       headers: {
@@ -90,7 +87,6 @@ export const preprocess = (filterState) => (dispatch) => {
       },
     })
     .then((res) => {
-      console.log(res.data);
       dispatch({
         type: PREPROCESS,
         payload: res.data,
@@ -115,7 +111,6 @@ export const getPrediction = () => (dispatch) => {
   axios
     .get("/predict")
     .then((res) => {
-      console.log(res.data);
       dispatch({
         type: PREDICT,
         payload: {

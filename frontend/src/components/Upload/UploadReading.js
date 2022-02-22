@@ -39,7 +39,6 @@ function UploadReading(props) {
   }, [file, isSubmitting, uploadFile]);
 
   React.useEffect(() => {
-    console.log(file);
     // dispatch state reset here
     resetState();
   }, [file, resetState]);
